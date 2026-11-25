@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اعمل نسخة كرتون منك | Mahmoud Salem AI</title>
+<meta property="og:title" content="اعمل نسخة كرتون منك تتكلم بصوتك">
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=IBM+Plex+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fff8ec;--ink:#2b1d10;--muted:#7a6650;--line:#efdfc6;--sun:#ffc629;--pink:#ff6f9c;--d:"Lalezar",system-ui,sans-serif;--b:"IBM Plex Sans Arabic",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--b);line-height:1.75}
+.wrap{max-width:560px;margin:0 auto;padding:0 18px 60px}
+h1,h2{font-family:var(--d);font-weight:400;line-height:1.2;margin:0}
+.top{display:flex;justify-content:space-between;padding:18px 0 4px;font-size:13px;color:var(--muted)}
+.top b{direction:ltr;color:var(--pink)}
+h1{font-size:42px;margin-top:10px}h1 span{color:var(--pink)}
+.lead{color:var(--muted);margin:8px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:13px}
+.step{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;margin-top:16px}
+.n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--pink);color:#fff;font-family:var(--d);font-size:20px;margin-left:8px}
+h2{font-size:24px;display:flex;align-items:center}
+.step p,.step li{color:#4c3a28}
+.prompt{background:#fff6dd;border:1px dashed #e8c66a;border-radius:16px;padding:12px 14px;margin-top:12px;font-size:15px;direction:ltr;text-align:left;white-space:pre-wrap}
+.prompt.ar{direction:rtl;text-align:right}
+button{margin-top:10px;border:0;background:var(--ink);color:#fff;font:700 14px var(--b);padding:8px 16px;border-radius:99px;cursor:pointer}
+.note{background:#ffeef3;border-radius:16px;padding:12px 14px;margin-top:12px;font-size:14px}
+.foot{text-align:center;color:var(--muted);font-size:13px;margin-top:30px}
+.foot b{direction:ltr;display:inline-block;color:var(--pink)}
+</style>
+</head>
+<body><div class="wrap">
+<div class="top"><span>Mahmoud Salem AI</span><b>@mahmoudsalem.ai</b></div>
+<h1>اعمل <span>نسخة كرتون</span> منك… وخليها تتكلم بصوتك</h1>
+<p class="lead">نفس الطريقة اللي عملت بيها الشخصية اللي في الريل. 3 خطوات، وكلها بأدوات ليها نسخة مجانية.</p>
+<div class="chips"><span class="chip">📸 صورة واحدة</span><span class="chip">🤖 Gemini أو ChatGPT</span><span class="chip">🎙️ صوتك إنت</span><span class="chip">👄 sync.so</span></div>
+
+<div class="step">
+<h2><span class="n">1</span>حوّل صورتك لشخصية كرتون</h2>
+<p>افتح Gemini أو ChatGPT، ارفع صورة ليك وشك واضح فيها ونورها كويس، والصق البرومبت ده زي ما هو:</p>
+<div class="prompt" id="p1">Turn the person in this photo into a 3D Pixar-style animated character. Keep the exact face shape, hairstyle, beard, glasses and skin tone so he is instantly recognizable. Plain black t-shirt, sitting in a cozy podcast studio with warm lights and a microphone in front of him, looking at the camera with a friendly expression, mouth slightly open as if talking. Soft cinematic lighting, high detail, vertical 9:16, no text.</div>
+<button onclick="cp('p1',this)">انسخ البرومبت</button>
+<div class="note">💡 لو مش لابس نضارة أو ملكش دقن، امسحهم من البرومبت. وغيّر الخلفية للمكان اللي يناسب محتواك.</div>
+</div>
+
+<div class="step">
+<h2><span class="n">2</span>ثبّت الشخصية</h2>
+<p>احفظ أحسن صورة طلعت، ودي بقت "الشخصية بتاعتك". كل ما تعوز مشهد جديد ارفعها تاني واكتب:</p>
+<div class="prompt" id="p2">Use this exact character: same face, hair, beard, glasses and outfit. Do not change his identity. New scene: [اكتب المشهد هنا]. Same 3D Pixar style, vertical 9:16, no text.</div>
+<button onclick="cp('p2',this)">انسخ البرومبت</button>
+<div class="note">كده هيطلع نفس الوش في كل فيديو، والناس تتعود على الشخصية.</div>
+</div>
+
+<div class="step">
+<h2><span class="n">3</span>سجّل بصوتك وخليها تتكلم</h2>
+<ol>
+<li>سجّل كلامك من الموبايل في مكان هادي (ولو عندك مايك أحسن).</li>
+<li>ادخل <b>sync.so</b> واختار <b>image to video</b>.</li>
+<li>ارفع صورة الشخصية + ملف صوتك، والشفايف هتتحرك على كلامك.</li>
+</ol>
+<div class="note">⚠️ الخطة المجانية في sync.so وقت ما جربتها: 3 فيديوهات في الشهر، كل واحد لحد 15 ثانية، وعليه علامة مائية. لو كلامك أطول، قسّمه أجزاء ولزقهم في CapCut.</div>
+</div>
+
+<div class="step">
+<h2><span class="n">+</span>خلّي Claude يكتبلك الكلام</h2>
+<p>مش عارف تقول إيه؟ الصق ده في Claude:</p>
+<div class="prompt ar" id="p3">اكتبلي سكريبت ريل 30 ثانية بالعامية المصرية عن [الموضوع]. أول جملة لازم تشد في أول ثانيتين، الجمل قصيرة، فكرة واحدة بس، وآخر سطر اطلب من الناس يكتبوا كلمة واحدة في الكومنت. اديني 3 اختيارات للجملة الأولى.</div>
+<button onclick="cp('p3',this)">انسخ البرومبت</button>
+</div>
+
+<p class="foot">جرّبتها؟ انشر الفيديو واعمل منشن <b>@mahmoudsalem.ai</b> وهشيّره ❤️</p>
+</div>
+<script>
+function cp(id,b){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{b.textContent='اتنسخ ✓';setTimeout(()=>b.textContent='انسخ البرومبت',1500)})}
+</script>
+</body></html>
