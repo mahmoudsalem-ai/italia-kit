@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700;800&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<title>فيديو AI بـ 0 جنيه — الأدوات والخطوات</title>
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Cairo', sans-serif; color: #1a1a1a; font-size: 12pt; line-height: 1.7; }
+.page { width: 210mm; height: 297mm; padding: 16mm 16mm 14mm; position: relative; page-break-after: always;
+  background-color: #f6f0e4;
+  background-image: linear-gradient(#e9e0cf 1px, transparent 1px), linear-gradient(90deg, #e9e0cf 1px, transparent 1px);
+  background-size: 9mm 9mm; }
+.page:last-child { page-break-after: auto; }
+.top { display: flex; justify-content: space-between; font-size: 9.5pt; color: #6b6255; border-bottom: 1px dashed #b9ad97; padding-bottom: 3mm; margin-bottom: 7mm; }
+h1, h2, h3 { font-family: 'Baloo Bhaijaan 2', sans-serif; margin: 0; line-height: 1.25; }
+h1 { font-size: 40pt; font-weight: 800; }
+h2 { font-size: 22pt; font-weight: 800; margin-bottom: 4mm; }
+.hl { background: #ffd23f; padding: 0 2mm; }
+.sub { font-size: 14pt; margin-top: 6mm; }
+.card { background: #fff; border: 2px solid #1a1a1a; border-radius: 4mm; box-shadow: 0 2mm 0 #1a1a1a; padding: 5mm 6mm; margin-bottom: 6mm; }
+.step { display: flex; gap: 5mm; align-items: flex-start; }
+.num { flex: 0 0 12mm; height: 12mm; border-radius: 50%; background: #e6a817; border: 2px solid #1a1a1a; font-family: 'Baloo Bhaijaan 2'; font-weight: 800; font-size: 16pt; display: flex; align-items: center; justify-content: center; }
+.step h3 { font-size: 15pt; font-weight: 800; }
+.tool { font-weight: 700; direction: ltr; unicode-bidi: isolate; }
+.step p { margin: 1mm 0 0; }
+.tip { font-size: 10.5pt; color: #4a4338; margin-top: 1.5mm; }
+.prompt { background: #1f1f1f; color: #f6f0e4; border-radius: 3mm; padding: 4mm 5mm; font-size: 11pt; margin: 2mm 0 5mm; white-space: pre-wrap; }
+.prompt b { color: #ffd23f; }
+table { width: 100%; border-collapse: collapse; font-size: 12pt; }
+td { padding: 2.5mm 0; border-bottom: 1px solid #ddd3c0; }
+td.v { text-align: left; font-weight: 700; color: #1e8e3e; white-space: nowrap; }
+.note { font-size: 10pt; color: #6b6255; }
+.foot { position: absolute; bottom: 9mm; left: 16mm; right: 16mm; display: flex; justify-content: space-between; font-size: 9pt; color: #8a7f6d; }
+.cover-box { margin-top: 40mm; }
+.big0 { font-family: 'Baloo Bhaijaan 2'; font-size: 90pt; font-weight: 800; color: #e6a817; line-height: 1; }
+.ltr { direction: ltr; unicode-bidi: isolate; }
+.prompt.en { direction: ltr; text-align: left; }
+.zero { font-family: "Cairo"; font-weight: 900; }
+@media screen { body{background:#e9e0cf} .page{width:auto;max-width:210mm;height:auto;min-height:0;margin:0 auto 5mm;padding:7mm 5mm} h1{font-size:30pt} .foot{position:static;margin-top:5mm} .cover-box{margin-top:10mm} }
+</style>
+</head>
+<body>
+
+<!-- 1. Cover -->
+<div class="page">
+  <div class="top"><span>فيديو AI بـ 0 جنيه</span><span class="ltr">@mahmoudsalem.ai</span></div>
+  <div class="cover-box">
+    <div class="big0"><span class="zero">0</span> جنيه</div>
+    <h1 style="margin-top:6mm">فيديو AI كامل<br>بالأدوات المجانية</h1>
+    <p class="sub">الأدوات والخطوات <span class="hl">بالترتيب</span>، من الفكرة لحد المونتاج،<br>ومعاها برومبتات جاهزة تنسخها على طول.</p>
+  </div>
+  <div class="card" style="margin-top:22mm">
+    <h3 style="font-size:14pt">في الملف ده</h3>
+    <p>١. الخطوات الخمسة والأداة المجانية لكل خطوة<br>
+    ٢. برومبتات جاهزة للنسخ<br>
+    ٣. تحويل Claude لاستوديو فيديو بسكيلز Higgsfield<br>
+    ٤. اعمل نسخة كرتون منك<br>
+    ٥. الفاتورة الحقيقية: دفعت إيه بدل الفلوس</p>
+  </div>
+  <div class="foot"><span class="ltr">@mahmoudsalem.ai</span><span>1 / 6</span></div>
+</div>
+
+<!-- 2. Steps -->
+<div class="page">
+  <div class="top"><span>فيديو AI بـ 0 جنيه</span><span class="ltr">@mahmoudsalem.ai</span></div>
+  <h2>الخطوات الخمسة</h2>
+
+  <div class="card step"><div class="num">1</div><div>
+    <h3>الفكرة والسيناريو — <span class="tool">Claude</span></h3>
+    <p>الخطة المجانية كفاية تكتب بيها القصة، وتقسمها لمشاهد، وتطلع برومبت لكل مشهد.</p>
+    <p class="tip">نصيحة: اطلب منه المشاهد في جدول (المشهد / الصورة / الحركة / الصوت) عشان تمشي عليه خطوة خطوة.</p>
+  </div></div>
+
+  <div class="card step"><div class="num">2</div><div>
+    <h3>الصور والشخصيات — <span class="tool">Gemini / ChatGPT</span></h3>
+    <p>الاتنين بيعملوا صور ببلاش بحدود يومية.</p>
+    <p class="tip">نصيحة: اعمل صورة مرجعية واحدة للشخصية، وارفعها مع كل برومبت عشان الشكل يفضل ثابت.</p>
+  </div></div>
+
+  <div class="card step"><div class="num">3</div><div>
+    <h3>الحركة — <span class="tool">Meta Vibes + Higgsfield</span></h3>
+    <p><span class="tool">Vibes</span> ببلاش، و<span class="tool">Higgsfield</span> بيديك كريديت مجاني تجرب بيه.</p>
+    <p class="tip">نصيحة: استخدم كريديت <span class="tool">Higgsfield</span> المجاني في اللقطة الأهم بس، وباقي اللقطات على <span class="tool">Vibes</span>.</p>
+  </div></div>
+
+  <div class="card step"><div class="num">4</div><div>
+    <h3>الصوت — صوتك + مايك</h3>
+    <p>أو أصوات <span class="tool">Google AI Studio</span> المجانية.</p>
+    <p class="tip">مؤثرات صوتية ببلاش: <span class="tool">SFX Kit</span> — ٣٢٠ مؤثر (whoosh، pop، ding…) مجانية للاستخدام التجاري ومن غير ما تذكر المصدر:<br><span class="tool">github.com/wyzowl/sfx-kit</span></p>
+  </div></div>
+
+  <div class="card step"><div class="num">5</div><div>
+    <h3>المونتاج — <span class="tool">CapCut / Claude</span></h3>
+    <p>أو خلّي <span class="tool">Claude</span> يمنتجلك بالكود (<span class="tool">Remotion</span>): عناوين متحركة وانتقالات وكارت نهاية.</p>
+  </div></div>
+
+  <div class="foot"><span class="ltr">@mahmoudsalem.ai</span><span>2 / 6</span></div>
+</div>
+
+<!-- 3. Prompts -->
+<div class="page">
+  <div class="top"><span>فيديو AI بـ 0 جنيه</span><span class="ltr">@mahmoudsalem.ai</span></div>
+  <h2>برومبتات جاهزة للنسخ</h2>
+  <p class="note">غيّر اللي بين القوسين [ ] بس.</p>
+
+  <h3 style="font-size:13pt">١. السيناريو (في Claude)</h3>
+  <div class="prompt">اكتبلي فكرة فيديو قصير ٢٠ ثانية عن <b>[الموضوع]</b> لجمهور مصري.
+قسّمه لـ ٥ مشاهد في جدول: المشهد / وصف الصورة / الحركة / الكلام أو الصوت.
+وفي الآخر اكتب برومبت صورة بالإنجليزي لكل مشهد.</div>
+
+  <h3 style="font-size:13pt">٢. الشخصية الثابتة (في Gemini أو ChatGPT)</h3>
+  <div class="prompt en">Create a character reference sheet of <b>[character description]</b>,
+front view, side view and full body, plain background, same outfit and face in all views,
+<b>[style: Pixar 3D / realistic / anime]</b>, vertical 9:16.</div>
+
+  <h3 style="font-size:13pt">٣. صورة المشهد (ارفع صورة الشخصية معاها)</h3>
+  <div class="prompt en">Using the uploaded character exactly as is, show them <b>[action]</b> in <b>[place]</b>,
+<b>[time of day + lighting]</b>, cinematic, vertical 9:16, no text.</div>
+
+  <h3 style="font-size:13pt">٤. الحركة (في Vibes أو Higgsfield)</h3>
+  <div class="prompt en">Slow camera push-in, the character <b>[one simple movement]</b>,
+natural motion, stable face, 5 seconds.</div>
+
+  <div class="foot"><span class="ltr">@mahmoudsalem.ai</span><span>3 / 6</span></div>
+</div>
+
+<!-- 4b. Higgsfield skills -->
+<div class="page">
+  <div class="top"><span>فيديو AI بـ 0 جنيه</span><span class="ltr">@mahmoudsalem.ai</span></div>
+  <h2>حوّل <span class="tool">Claude</span> لاستوديو فيديو</h2>
+  <p>شركة <span class="tool">Higgsfield</span> نزّلت سكيلز رسمية ومجانية بتعلّم <span class="tool">Claude</span> يختار الموديل، ويكتب البرومبت، ويشغّل التوليد بنفسه.</p>
+
+  <div class="card step"><div class="num">1</div><div>
+    <h3>نزّل السكيلز</h3>
+    <p class="tool" style="font-size:12.5pt">github.com/higgsfield-ai/skills</p>
+    <p class="tip">لو بتستخدم <span class="tool">Claude Code</span>: <span class="tool">npx skills add higgsfield-ai/skills</span></p>
+  </div></div>
+
+  <div class="card step"><div class="num">2</div><div>
+    <h3>وصّل حساب <span class="tool">Higgsfield</span></h3>
+    <p>من الـ Connectors في <span class="tool">Claude</span>، أو بالـ CLI بتاعهم وسجّل دخول بنفسك.</p>
+  </div></div>
+
+  <div class="card step"><div class="num">3</div><div>
+    <h3>اختار السكيل المناسب</h3>
+    <p>ريل من غير وش بتعليق صوتي ← <span class="tool">faceless-video</span><br>
+    صورة / فيديو / إعلان <span class="tool">UGC</span> ← <span class="tool">generate</span><br>
+    صورة غلاف يوتيوب ← <span class="tool">youtube-thumbnail</span><br>
+    شخصية وشّها ثابت ← <span class="tool">soul-id</span></p>
+  </div></div>
+
+  <h3 style="font-size:13pt;margin-top:2mm">أهم سطر في البرومبت 👇</h3>
+  <div class="prompt">اعملّي <b>[ريل 20 ثانية عن ...]</b>.
+اعرض الموديلات والتكلفة المتوقعة الأول، <b>ومتبدأش التوليد غير بموافقتي.</b></div>
+  <p class="note">السكيلز ببلاش، بس التوليد بيصرف كريديت <span class="tool">Higgsfield</span>. ابدأ بالكريديت المجاني.</p>
+
+  <div class="foot"><span class="ltr">@mahmoudsalem.ai</span><span>4 / 6</span></div>
+</div>
+
+<!-- avatar page -->
+<div class="page">
+  <div class="top"><span>فيديو AI بـ 0 جنيه</span><span class="ltr">@mahmoudsalem.ai</span></div>
+  <h2>اعمل نسخة كرتون منك</h2>
+  <p>ارفع صورة ليك (وشك واضح ونور حلو) في <span class="tool">ChatGPT</span> أو <span class="tool">Gemini</span>، والصق البرومبت ده:</p>
+  <div class="prompt en">Turn the person in this photo into a 3D Pixar-style animated character.
+Keep the same face shape, hairstyle, beard, glasses and skin tone so it is clearly him.
+Friendly expression, sitting at a desk with a podcast microphone, warm purple and orange studio lights,
+vertical 9:16, high detail, no text.</div>
+  <div class="card step"><div class="num">1</div><div><h3>ثبّت الشخصية</h3><p>احفظ أحسن صورة طلعت، وارفعها هي نفسها مع كل برومبت جاي واكتب: <span class="tool">Use this exact character</span>.</p></div></div>
+  <div class="card step"><div class="num">2</div><div><h3>سجّل بصوتك</h3><p>سجّل الكلام بالمايك أو الموبايل في مكان هادي، جملة جملة بينهم ثانية سكوت.</p></div></div>
+  <div class="card step"><div class="num">3</div><div><h3>خليها تتكلم</h3><p>ركّب الصوت على الشخصية في <span class="tool">CapCut</span> وحط كلام مكتوب، أو استخدم أداة تحريك شفايف (بعضها بيدي ثواني مجانية كل شهر).</p></div></div>
+  <div class="foot"><span class="ltr">@mahmoudsalem.ai</span><span>5 / 6</span></div>
+</div>
+
+<!-- 4. Invoice -->
+<div class="page">
+  <div class="top"><span>فيديو AI بـ 0 جنيه</span><span class="ltr">@mahmoudsalem.ai</span></div>
+  <h2>الفاتورة الحقيقية</h2>
+  <div class="card">
+    <table>
+      <tr><td>الصور — Gemini / ChatGPT</td><td class="v"><span class="zero" style="font-weight:700">0</span> ج</td></tr>
+      <tr><td>الحركة — Meta Vibes</td><td class="v"><span class="zero" style="font-weight:700">0</span> ج</td></tr>
+      <tr><td>اللقطة الرئيسية — Higgsfield (كريديت مجاني)</td><td class="v"><span class="zero" style="font-weight:700">0</span> ج</td></tr>
+      <tr><td>الصوت — صوتي + المايك</td><td class="v"><span class="zero" style="font-weight:700">0</span> ج</td></tr>
+      <tr><td>السيناريو — Claude Pro (اشتراكي الشهري أصلًا)</td><td class="v" style="color:#6b6255">ضمن الاشتراك</td></tr>
+    </table>
+    <p style="margin-top:4mm"><b>بس مفيش حاجة ببلاش ١٠٠٪.</b> اللي دفعته بدل الفلوس: نص ساعة من وقتي، وصبر على الحدود اليومية للأدوات المجانية.</p>
+  </div>
+
+  <div class="card">
+    <h3 style="font-size:14pt">ولو حبيت تطوّر بعدين</h3>
+    <p>لو قررت تشترك في <span class="tool">Higgsfield</span>، عندهم دلوقتي عرض بلاك فرايداي لحد ٧٠٪ (مثلًا خطة Plus بقت ٢٥$ في الشهر بدل ٤٩$ في الاشتراك السنوي)، والعرض لفترة محدودة. ادخل من اللينك بتاعي:</p>
+    <p class="tool" style="font-size:13pt">higgsfield.ai?fpr=mahmoud-c1927b</p>
+    <p class="note">ده لينك أفيليت، يعني بكسب عمولة لو اشتركت منه. ابدأ بالمجاني الأول، واشترك لما المحتوى يجيب فلوس.</p>
+  </div>
+
+  <div class="card" style="background:#1f1f1f;color:#f6f0e4;border-color:#1f1f1f">
+    <h3 style="font-size:16pt;color:#ffd23f">عايز أكتر؟</h3>
+    <p>تابع <span class="ltr">@mahmoudsalem.ai</span> — كل يوم طريقة جديدة تعمل بيها فيديو AI بأقل تكلفة.</p>
+  </div>
+
+  <div class="foot"><span class="ltr">@mahmoudsalem.ai</span><span>6 / 6</span></div>
+</div>
+
+</body>
+</html>
